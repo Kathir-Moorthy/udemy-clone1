@@ -50,6 +50,9 @@ body {
     gap: 10px;
     align-items: center;
 }
+.Navbar__S4{
+    display: none;
+}
 /* My Learning*/
 .mylearning{
     position: relative;
@@ -136,7 +139,9 @@ body {
 }
 
 .course-card {
-    width: 350px;
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin: 5px;
 }
 
 .course-card img {
@@ -161,6 +166,11 @@ body {
     padding: 10px;
     flex-basis: 25%;
     flex-grow: 1;
+    cursor: pointer;
+}
+.topics__container :hover{
+    background-color: purple;
+    color: white;
 }
 
 .popular {
@@ -194,12 +204,37 @@ body {
 .recommeded__container :hover{
     background-color: purple;
     color: white;
+    cursor: pointer;
 }
 .popular__container :hover{
     background-color: purple;
     color: white;
+    cursor: pointer;
 }
-.topics__container :hover{
-    background-color: purple;
-    color: white;
+/* Media Quieries*/
+@media screen and (max-width: 800px){
+    font-size: 10px;
+}
+@media screen and (max-width: 600px){
+    .course-card{
+        flex-basis: 40%;
+        margin: 5px;
+        margin-bottom: 40px;
+    }
+    .sale-image__offer{
+        top: 8%;
+        left: 0.5%;
+        width: 42%;
+        font-size: 12px;
+        height: fit-content;
+    }
+    .Navbar__S4{
+        display: block;
+    }
+    .category{
+        display: none;
+    }
+    .Navbar__S2,.Navbar__S3{
+        display: none;
+    }
 }
