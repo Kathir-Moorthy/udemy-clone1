@@ -78,8 +78,18 @@ body {
 .category p {
     background-color: purple;
     color: white;
+    font-weight: bold;
     padding: 10px;
     border-radius: 30px;
+    cursor: pointer;
+    border: solid #A435F0 1px;
+}
+.category p:hover{
+    transition: 1s;
+    background: transparent;
+    color: #A435F0;
+    font-weight: bold;
+    border: solid #A435F0 1px;
 }
 
 .sale-image{
@@ -98,6 +108,20 @@ body {
     position: absolute;
     top: 10%;
     left: 8%;
+    animation-name: zoom;
+    animation-duration: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+@keyframes zoom{
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 .recommended {
     padding: 10px;
@@ -178,8 +202,4 @@ body {
 .topics__container :hover{
     background-color: purple;
     color: white;
-}
-.category :hover{
-    background-color: black;
-    color: whitesmoke;
 }
