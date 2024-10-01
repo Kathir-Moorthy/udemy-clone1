@@ -110,7 +110,7 @@ body {
     padding: 2%;
     position: absolute;
     top: 10%;
-    left: 8%;
+    left: 5%;
     animation-name: zoom;
     animation-duration: 2s;
     opacity: 0;
@@ -219,13 +219,13 @@ body {
     .course-card{
         flex-basis: 40%;
         margin: 5px;
-        margin-bottom: 40px;
+        margin-bottom: 55px;
     }
     .sale-image__offer{
         top: 8%;
         left: 0.5%;
         width: 42%;
-        font-size: 12px;
+        font-size: 8px;
         height: fit-content;
     }
     .Navbar__S4{
